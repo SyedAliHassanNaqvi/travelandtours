@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset default margins and paddings */
+html, body {
+  margin: 0;        /* Remove default margin */
+  padding: 0;       /* Remove default padding */
+  width: 100%;      /* Ensure full width */
+  height: 100%;     /* Ensure full height */
+}
+
+/* Container for the app */
+.app-container {
+  position: relative; /* Allow for absolute positioning of children */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+/* Content in the homepage */
+.homepage-content {
+  display: flex;               /* Use flexbox for centering */
+  flex-direction: column;      /* Stack items vertically */
+  justify-content: center;     /* Center vertically */
+  align-items: center;         /* Center horizontally */
+  height: calc(100vh - 80px); /* Adjust based on your navbar height */
+}
+
+
+
+@layer base{
+  .active{
+    @apply text-primary;
+  }
+}
