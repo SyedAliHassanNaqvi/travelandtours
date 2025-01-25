@@ -1,8 +1,11 @@
 import React from "react";
-import MainVid from "../../assets/video/main.mp4";
 import { MdFlight, MdLocalTaxi, MdOutlineLocalHotel } from "react-icons/md";
 import { IoIosWifi } from "react-icons/io";
 import { IoFastFoodSharp } from "react-icons/io5";
+import UhsVid from "../../assets/video/uhs.mp4";
+import BbyVid from "../../assets/video/bby.mp4";
+import Review2Vid from "../../assets/video/review2.mp4";
+import ReviewVid from "../../assets/video/review.mp4";
 
 const Banner = () => {
   return (
@@ -19,7 +22,7 @@ const Banner = () => {
                 muted
                 className="w-full h-[400px] object-cover rounded-lg"
               >
-                <source src={MainVid} type="video/mp4" />
+                <source src={UhsVid} type="video/mp4" />
               </video>
               <video
                 data-aos="flip-up"
@@ -28,7 +31,7 @@ const Banner = () => {
                 muted
                 className="w-full h-[400px] object-cover rounded-lg"
               >
-                <source src={MainVid} type="video/mp4" />
+                <source src={Review2Vid} type="video/mp4" />
               </video>
               <video
                 data-aos="flip-up"
@@ -37,7 +40,7 @@ const Banner = () => {
                 muted
                 className="w-full h-[400px] object-cover rounded-lg"
               >
-                <source src={MainVid} type="video/mp4" />
+                <source src={BbyVid} type="video/mp4" />
               </video>
               <video
                 data-aos="flip-up"
@@ -46,7 +49,7 @@ const Banner = () => {
                 muted
                 className="w-full h-[400px] object-cover rounded-lg"
               >
-                <source src={MainVid} type="video/mp4" />
+                <source src={ReviewVid} type="video/mp4" />
               </video>
             </div>
 

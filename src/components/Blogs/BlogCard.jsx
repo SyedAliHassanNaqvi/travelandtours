@@ -1,14 +1,15 @@
 import React from "react";
+import { GiPriceTag } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
-const BlogCard = ({ image, date, title, description, author }) => {
+const BlogCard = ({ image, date, title, description, author, price }) => {
   return (
     <Link
       to={`/blogs/${title}`}
       onClick={() => {
         window.scrollTo(0, 0);
       }}
-      state={{ image, date, title, description, author }}
+      state={{ image, date, title, description, author, price }}
     >
       <div className="p-4 shadow-lg transition-all duration-500 hover:shadow-xl ">
         <div className="overflow-hidden">
@@ -25,6 +26,11 @@ const BlogCard = ({ image, date, title, description, author }) => {
         </div>
         <div className="space-y-2 py-3">
           <h1 className="line-clamp-1 font-bold">{title}</h1>
+          <h1 className="line-clamp-1 font-bold text-primary">
+            {GiPriceTag}
+            {price}
+          </h1>
+
           <p className="line-clamp-2">{description}</p>
         </div>
       </div>

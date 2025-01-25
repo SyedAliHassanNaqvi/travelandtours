@@ -20,31 +20,38 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
               </div>
             </div>
             {/* body */}
-            <div className="mt-4">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full rounded-full border border-gray-300 
+            <form action="https://getform.io/f/bxoozrla" method="POST">
+              <div className="mt-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  className="w-full rounded-full border border-gray-300 
                px-2 py-1 mb-4"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full rounded-full border border-gray-300 
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  className="w-full rounded-full border border-gray-300 
                px-2 py-1 mb-4"
-              />
-              <input
-                type="text"
-                placeholder="Details"
-                className="w-full rounded-full border border-gray-300 
+                />
+
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Details"
+                  className="w-full border rounded-xl border-gray-300 
                px-2 py-1 mb-4"
-              />
-              <div className="flex items-center justify-center">
-                <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full">
-                  Book Now
-                </button>
+                ></textarea>
+
+                <div className="flex items-center justify-center">
+                  <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full">
+                    Book Now
+                  </button>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       )}
